@@ -27,10 +27,13 @@
 }
 
 .task__input,
-.task__label,
 .list__input,
 .list__label {
   width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+.task__label{
   display: inline-block;
   flex-grow: 1;
 }
@@ -165,16 +168,16 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul .list__item input[type=text] {
+.list__item input[type=text] {
   display: none;
 }
 
-ul .list__item--edit input[type="text"] {
+.list__item--edit input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul .list__item--edit label {
+.list__item--edit label {
   display: none;
 }
 
